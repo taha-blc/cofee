@@ -1,0 +1,448 @@
+/*Google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+/*font types*/
+/*
+font-family: 'Herr Von Muellerhoff', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+/*Header Başlangıç*/
+
+section,
+span,
+p {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+}
+
+.container {
+  max-width: 73rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header {
+  background-image: url(images/backgroun.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.header-navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+.header-logo {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  border-bottom: 5px solid black;
+  border-radius: 1rem;
+  padding-bottom: 3px;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  margin-left: 5em;
+}
+
+a {
+  color: #65451f;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.first-letter {
+  color: #745b37;
+  font-size: 10.5;
+  font-family: "Herr Von Muellerhoff", cursive;
+}
+
+h1 {
+  color: #745b37;
+  font-size: 15rem;
+  font-weight: 100;
+  line-height: 0.4;
+  letter-spacing: 2px;
+  font-family: "Herr Von Muellerhoff", cursive;
+}
+
+h3 {
+  padding-top: 1rem;
+  margin-top: 10px;
+  font-size: 22px;
+  padding-bottom: 1rem;
+}
+
+.btn-cofee {
+  display: block;
+  background-color: #745b37;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 35px 0 35px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-cofee::after {
+  letter-spacing: 1px;
+  content: "BUY";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #5b2a02;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.btn-cofee:hover::after {
+  top: 0;
+}
+
+/*Header End*/
+
+/*About start*/
+#about {
+  height: 100vh;
+}
+
+.about {
+  margin-bottom: 10rem;
+}
+
+.about-title {
+  margin: 60px 0;
+}
+
+.about-title h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: #5b2a02;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.about-title h2::after {
+  content: "";
+  width: 45px;
+  height: 3px;
+  background-color: #5b2a02;
+  margin: 0 auto;
+  display: block;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.about-img {
+  width: 40%;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-text {
+  width: 40%;
+}
+
+h4 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 60px;
+  color: #745b37;
+  font-family: "Herr Von Muellerhoff", cursive;
+  letter-spacing: 0.5rem;
+  font-weight: bold;
+}
+
+#asteriks {
+  color: #745b37;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  text-align: center;
+  color: #2c2727;
+}
+/*About end*/
+/*portfolio start*/
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-item {
+  width: 25%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 500ms ease;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #745b37;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 500ms ease;
+}
+
+.overlay svg {
+  font-size: 70px;
+}
+
+.portfolio-item:hover .overlay {
+  transform: translateY(-350px);
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.2);
+}
+/*portfolio end*/
+/*contact start*/
+
+.contact {
+  padding: 10px 0;
+}
+
+.contact h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: #5b2a02;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.contact h2::after {
+  content: "";
+  width: 4rem;
+  height: 3px;
+  background-color: #5b2a02;
+  margin: 0 auto;
+  display: block;
+}
+
+.contact-content {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  flex-basis: 33%;
+  margin-bottom: 100px;
+  flex-direction: column;
+}
+
+.contact-item svg {
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: #5b2a02;
+}
+
+.contact-item p {
+  font-size: 1.1rem;
+  line-height: 33px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+}
+
+/*contanct end*/
+
+/*Footer Start*/
+
+.footer {
+  background: black;
+}
+
+.footer h2 {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: #5b2a02;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.footer h2::after {
+  content: "";
+  width: 4rem;
+  height: 3px;
+  background-color: #5b2a02;
+  margin: 0 auto;
+  display: block;
+  /* margin-top: 10px; */
+}
+
+.footer {
+  background-color: #745b37;
+}
+
+.footer-copyright {
+  color: #fff;
+  text-align: center;
+  flex-basis: 55%;
+  line-height: 2;
+  font-size: 13px;
+  margin-top: 40px;
+}
+.footer-copyright p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footer-social ul li a {
+  margin-left: 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+/*Footer End*/
+
+.header-menu svg {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 25;
+}
+
+@media only screen and (max-width: 899px) {
+  .header-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #5b2a02;
+    width: 50%;
+  }
+
+  .header-menu ul li {
+    margin-right: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .header-menu ul li a {
+    color: #fff;
+  }
+
+  .header-text h1 {
+    font-size: 7rem;
+  }
+
+  .header-text h3 {
+    font-size: 1rem;
+  }
+
+  .header-text span {
+    font-size: 8rem;
+  }
+  .header-text .btn-cofee {
+    font-size: smaller;
+  }
+}
+
+/*about media*/
+
+@media only screen and (max-width: 975px) {
+  .about img {
+    width: 100%;
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #portfolio {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  .container {
+    height: 35rem;
+  }
+
+  .header-navbar {
+    height: 30vh;
+    margin-top: 2vh;
+    width: 100%;
+  }
+
+  .header-logo h {
+    height: 153rem;
+  }
+}

@@ -1,3 +1,9 @@
+document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    alert('You cannot access the codes of the project this way :)')
+});
+
+
 ScrollReveal().reveal(".ani1", { delay: 250 });
 ScrollReveal().reveal(".ani2", { delay: 500 });
 ScrollReveal().reveal(".ani3", { delay: 750 });
